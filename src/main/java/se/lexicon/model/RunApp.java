@@ -22,17 +22,17 @@ public class RunApp {
         productList.add(new Product("Best", 120.00, 0));
 
 
-        // todo: Print out all Products that have stock value of 0.
-        //Action action = (p) -> System.out.println(p.toString());
-        //Conditional conditional = (p) -> p.getStock() == 0;
+
         process(
                 productList,
                 (p) -> p.getStock() == 0,
                 (p) -> System.out.println(p.toString()));
         System.out.println("----------------------------");
-        // todo: Print out the productName of all the Products that starts with B.
+
+
         process(productList, (p) -> p.getProductName().startsWith("B"), p -> System.out.println(p));
         System.out.println("----------------------------");
+
         // todo: Print out all Products that have price above 100 AND lower than 150
 
         // todo: Increase the price of all Products that have a stock value of less than 10 AND above 0 by 50%
