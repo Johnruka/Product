@@ -1,5 +1,8 @@
 package se.lexicon.model;
 
+@FunctionalInterface
 public interface Conditional {
-    <Product> boolean test (Product p);
+    boolean test(Product product);
 }
+
+
